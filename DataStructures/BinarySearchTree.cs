@@ -2,7 +2,8 @@ using EmployeeBST.Models;
 using System;
 using System.Collections.Generic;
 namespace EmployeeBST.DataStructures
-{public class BinarySearch
+{
+        public class BinarySearch
         {
             public Node Root { get; set; }
 

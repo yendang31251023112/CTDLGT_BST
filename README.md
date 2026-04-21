@@ -12,5 +12,5 @@ Chi tiết: Giả sử các tập hồ sơ trên máy tính được lưu trữ 
 # Danh sách thành viên:
 1. Đặng Thị Hoàng Yến: 31251023112
 2. Phạm Quỳnh Ngân: 31251027645
-3. Huỳnh Xuân Hoàng: 31251021292
+3. Huỳnh Xuân Hoàng Tuấn: 31251021292
 4. Đặng Quốc Duy: 31251023913

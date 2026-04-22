@@ -10,7 +10,7 @@ namespace EmployeeBST.Models
         public string BoPhan { get; set; }
         public DateTime NgaySinh { get; set; }
         public DateTime NgayVaoLam { get; set; }
-        public string Ghichu { get; set}
+        public string Ghichu { get; set; }
 
         public Employee(string name, string dept, DateTime birth, DateTime start, string gc)
         {

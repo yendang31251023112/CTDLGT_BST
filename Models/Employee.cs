@@ -10,14 +10,16 @@ namespace EmployeeBST.Models
         public string BoPhan { get; set; }
         public DateTime NgaySinh { get; set; }
         public DateTime NgayVaoLam { get; set; }
+        public string Ghichu { get; set}
 
-        public Employee(string name, string dept, DateTime birth, DateTime start)
+        public Employee(string name, string dept, DateTime birth, DateTime start, string gc)
         {
             MaNhanVien = GenerateID(dept);
             TenNhanVien = name;
             BoPhan = dept;
             NgaySinh = birth;
             NgayVaoLam = start;
+            Ghichu = gc;
         }
         
         //tự động cập nhật mã nhân viên

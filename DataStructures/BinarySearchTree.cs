@@ -1,34 +1,33 @@
-using EmployeeBST.Models;
+using BSTProject.Models;
 using System;
 using System.Collections.Generic;
-namespace EmployeeBST.DataStructures
+namespace BSTProject.DataStructures
 {
-        public class BinarySearch
+    public class BinarySearch
+    {
+        public Node Root { get; set; }
+        public BinarySearch()
         {
-            public Node Root { get; set; }
+            Root = null;
+        }
 
-            public BinarySearch()
+        //thêm nhân viên mới
+        public bool Insert(Employee emp)
+        {
+            Node newNode = new Node(emp);
+
+            if (Root == null)
             {
-                Root = null;
+                Root = newNode;
+                return true;
             }
 
-            //thêm nhân viên mới
-            public bool Insert(Employee emp)
+            Node current = Root;
+            Node parent = null;
+
+            while (current != null)
             {
-                Node newNode = new Node(emp);
-
-                if (Root == null)
-                {
-                    Root = newNode;
-                    return true;
-                }
-
-                Node current = Root;
-                Node parent = null;
-
-                while (current != null)
-                {
-                    parent = current;
+                parent = current;
 
                     if (emp.NgayVaoLam <= current.Data.NgayVaoLam)
                         current = current.Left;
@@ -128,19 +127,58 @@ namespace EmployeeBST.DataStructures
                 if (date < end)
                     SearchDateRange(node.Right, start, end, result);
             }
-
-            //sắp xếp theo bộ phận
-            public List<Employee> SortByDepartment()
+            //chuyển đổi giới tính thành số
+            private int GetGenderOrder(string gender)
             {
-                List<Employee> list = GetAllAscending();
+                if (gender == null)
+                    return 2; // phòng trường hợp chưa nhập giới tính
 
-                // Insertion Sort theo bộ phận (nếu trùng thì theo ngày vào làm)
+                gender = gender.ToLower();
+
+                if (gender == "nữ" || gender == "nu" || gender == "female")
+                    return 0;
+
+                if (gender == "nam" || gender == "male")
+                    return 1;
+
+                return 2; // giới tính khác (nếu có)
+            }
+            //các loại sort
+            private int Compare(Employee a, Employee b, int type)
+            {
+                if (type == 1) // sort theo tên
+                    return string.Compare(a.TenNhanVien, b.TenNhanVien, true);
+
+                if (type == 2) // sort theo bộ phận
+                {
+                    int deptCompare = a.BoPhan.CompareTo(b.BoPhan);
+                    if (deptCompare == 0)
+                        return a.NgayVaoLam.CompareTo(b.NgayVaoLam);
+                    return deptCompare;
+                }
+
+                if (type == 3) // sort theo giới tính
+                {
+                    int genderA = GetGenderOrder(a.GioiTinh);
+                    int genderB = GetGenderOrder(b.GioiTinh);
+
+                    if (genderA == genderB)
+                        return a.NgayVaoLam.CompareTo(b.NgayVaoLam);
+
+                    return genderA.CompareTo(genderB);
+                }
+
+                return 0;
+            }
+            //Insertion sort
+            private List<Employee> InsertionSort(List<Employee> list, int type)
+            {
                 for (int i = 1; i < list.Count; i++)
                 {
                     Employee key = list[i];
                     int j = i - 1;
 
-                    while (j >= 0 && CompareEmployee(list[j], key) > 0)
+                    while (j >= 0 && Compare(list[j], key, type) > 0)
                     {
                         list[j + 1] = list[j];
                         j--;
@@ -150,14 +188,20 @@ namespace EmployeeBST.DataStructures
 
                 return list;
             }
-            private int CompareEmployee(Employee a, Employee b)
+            //sort tên theo bảng alphabet
+            public List<Employee> SortByName()
             {
-                int deptCompare = a.BoPhan.CompareTo(b.BoPhan);
-
-                if (deptCompare == 0)
-                    return a.NgayVaoLam.CompareTo(b.NgayVaoLam);
-
-                return deptCompare;
+                return InsertionSort(GetAllAscending(), 1);
+            }
+            //sort theo bộ phân
+            public List<Employee> SortByDepartment()
+            {
+                return InsertionSort(GetAllAscending(), 2);
+            }
+            //sort theo giới tính
+            public List<Employee> SortByGender()
+            {
+                return InsertionSort(GetAllAscending(), 3);
             }
 
             //đếm tổng số nhân viên

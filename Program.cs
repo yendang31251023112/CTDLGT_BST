@@ -11,7 +11,6 @@ namespace BSTProject
         {
             Console.Clear();
             BinarySearch tree = new BinarySearch();
-
             
                 tree.Insert(new Employee("Nguyễn Hải Đăng", "Nam", new DateTime(1998, 1, 15), new DateTime(2022, 2, 10), "IT", "Lập trình backend"));
                 tree.Insert(new Employee("Trần Khánh Linh", "Nữ", new DateTime(1999, 4, 20), new DateTime(2023, 1, 5), "IT", "Frontend React"));
@@ -44,19 +43,6 @@ namespace BSTProject
                 tree.Insert(new Employee("Phạm Văn Nam", "Nam", new DateTime(1995, 9, 9), new DateTime(2019, 4, 4), "SAL", "Trưởng nhóm sales"));
                 tree.Insert(new Employee("Võ Ngọc Hân", "Nữ", new DateTime(1999, 7, 7), new DateTime(2023, 5, 5), "SAL", "Telesales"));
 
-            // ===== TEST CHỨC NĂNG =====
-
-            Console.WriteLine("\nFind theo tên:");
-            PrintList(tree.FindByName("Bảo"));
-
-            Console.WriteLine("\n Find date range:");
-            DateTime start = new DateTime(2020, 1, 1);
-            DateTime end   = new DateTime(2021, 12, 31);
-            PrintList(tree.FindByDateRange(start,end));
-
-            Console.WriteLine("\nTổng số nhân viên: " + tree.Count());
-            Console.WriteLine("Nhân viên cũ nhất: " + tree.GetOldest().TenNhanVien);
-            Console.WriteLine("Nhân viên mới nhất: " + tree.GetNewest().TenNhanVien);
         }
 
         static void PrintList(List<Employee> list)

@@ -1,7 +1,7 @@
-using BSTProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using BSTProject.Models;
 namespace BSTProject.DataStructures
 {
     public class BinarySearch
@@ -129,6 +129,7 @@ namespace BSTProject.DataStructures
                     SearchDateRange(node.Right, start, end, result);
             }
 
+
             //các loại sort
             private int Compare(Employee a, Employee b, int type)
             {
@@ -189,6 +190,7 @@ namespace BSTProject.DataStructures
                 return InsertionSort(GetAllAscending(), 2);
             }
 
+
             //đếm tổng số nhân viên
             public int Count()
             {
@@ -201,7 +203,7 @@ namespace BSTProject.DataStructures
                 return 1 + Count(node.Left) + Count(node.Right);
             }
 
-            //Tìm NV cũ nhất (bên trái)
+            //Tìm NV cũ nhất 
             public Employee GetOldest()
             {
                 if (Root == null)
@@ -212,7 +214,7 @@ namespace BSTProject.DataStructures
                 return current.Data;
             }
 
-            //tìm nv mới nhất (bên phải)
+            //tìm nv mới nhất 
             public Employee GetNewest()
             {
                 if (Root == null)

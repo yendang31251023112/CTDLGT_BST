@@ -1,4 +1,3 @@
-using BSTProject.Models;
 using System;
 using System.Collections.Generic;
 namespace BSTProject.DataStructures
@@ -8,11 +7,12 @@ namespace BSTProject.DataStructures
         private DeptCounterNode head;
         public int GetNextNumber(string prefix)
         {
-            // nếu list rỗng → tạo node đầu tiên
+            // nếu list rỗng thì tạo node đầu tiên
             if (head == null)
             {
                 head = new DeptCounterNode(prefix);
-                return 1;
+                head.Count++;          
+                return head.Count;     
             }
 
             DeptCounterNode current = head;
@@ -22,12 +22,11 @@ namespace BSTProject.DataStructures
             {
                 if (current.Prefix == prefix)
                 {
-                    int number = current.Count;
-                    current.Count++;
-                    return number;
+                    current.Count++;        
+                    return current.Count;   
                 }
 
-                // tới node cuối mà chưa thấy → tạo mới
+                // tới node cuối mà chưa thấy thì tạo mới
                 if (current.Next == null)
                     break;
 
@@ -36,7 +35,8 @@ namespace BSTProject.DataStructures
 
             // thêm bộ phận mới vào cuối list
             current.Next = new DeptCounterNode(prefix);
-            return 1;
+            current.Next.Count++;
+            return current.Next.Count;
         }
     }
 }

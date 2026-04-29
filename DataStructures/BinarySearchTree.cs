@@ -1,6 +1,7 @@
 using BSTProject.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 namespace BSTProject.DataStructures
 {
     public class BinarySearch
@@ -127,47 +128,29 @@ namespace BSTProject.DataStructures
                 if (date < end)
                     SearchDateRange(node.Right, start, end, result);
             }
-            //chuyển đổi giới tính thành số
-            private int GetGenderOrder(string gender)
-            {
-                if (gender == null)
-                    return 2; // phòng trường hợp chưa nhập giới tính
 
-                gender = gender.ToLower();
-
-                if (gender == "nữ" || gender == "nu" || gender == "female")
-                    return 0;
-
-                if (gender == "nam" || gender == "male")
-                    return 1;
-
-                return 2; // giới tính khác (nếu có)
-            }
             //các loại sort
             private int Compare(Employee a, Employee b, int type)
             {
-                if (type == 1) // sort theo tên
-                    return string.Compare(a.TenNhanVien, b.TenNhanVien, true);
+                if (type == 1)
+                {
+                    string nameA = GetLastName(a.TenNhanVien);
+                    string nameB = GetLastName(b.TenNhanVien);
 
+                    return string.Compare(
+                        nameA,
+                        nameB,
+                        CultureInfo.GetCultureInfo("vi-VN"),
+                        CompareOptions.IgnoreCase
+                    );
+                }
                 if (type == 2) // sort theo bộ phận
                 {
                     int deptCompare = a.BoPhan.CompareTo(b.BoPhan);
                     if (deptCompare == 0)
-                        return a.NgayVaoLam.CompareTo(b.NgayVaoLam);
+                        return a.MaNhanVien.CompareTo(b.MaNhanVien);
                     return deptCompare;
                 }
-
-                if (type == 3) // sort theo giới tính
-                {
-                    int genderA = GetGenderOrder(a.GioiTinh);
-                    int genderB = GetGenderOrder(b.GioiTinh);
-
-                    if (genderA == genderB)
-                        return a.NgayVaoLam.CompareTo(b.NgayVaoLam);
-
-                    return genderA.CompareTo(genderB);
-                }
-
                 return 0;
             }
             //Insertion sort
@@ -188,20 +171,22 @@ namespace BSTProject.DataStructures
 
                 return list;
             }
+            //lấy tên trước khi sắp xếp
+            private string GetLastName(string fullName)
+            {
+                if (string.IsNullOrWhiteSpace(fullName)) return "";
+                string[] parts = fullName.Trim().Split(' ');
+                return parts[parts.Length - 1];
+            }
             //sort tên theo bảng alphabet
             public List<Employee> SortByName()
             {
                 return InsertionSort(GetAllAscending(), 1);
             }
-            //sort theo bộ phân
+            //sort theo bộ phận
             public List<Employee> SortByDepartment()
             {
                 return InsertionSort(GetAllAscending(), 2);
-            }
-            //sort theo giới tính
-            public List<Employee> SortByGender()
-            {
-                return InsertionSort(GetAllAscending(), 3);
             }
 
             //đếm tổng số nhân viên

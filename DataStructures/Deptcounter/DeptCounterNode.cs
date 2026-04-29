@@ -1,4 +1,3 @@
-using BSTProject.Models;
 using System;
 using System.Collections.Generic;
 namespace BSTProject.DataStructures
@@ -12,7 +11,7 @@ namespace BSTProject.DataStructures
         public DeptCounterNode(string prefix)
         {
             Prefix = prefix;
-            Count = 1;
+            Count = 0;
             Next = null;
         }
     }

@@ -9,20 +9,20 @@ namespace BSTProject.Models
         public string MaNhanVien { get; private set; }
         public string TenNhanVien { get; set; }
         public string GioiTinh { get; set; }
-        public string BoPhan { get; set; }
         public DateTime NgaySinh { get; set; }
         public DateTime NgayVaoLam { get; set; }
-        public string Ghichu { get; set; }
+        public string BoPhan { get; set; }
+        public string GhiChu { get; set; }
 
-        public Employee(string name, string dept, DateTime birth, DateTime start, string gioiTinh, string gc)
+        public Employee(string name, string gender, DateTime birth, DateTime start, string dept, string note)
         {
             MaNhanVien = GenerateID(dept);
             TenNhanVien = name;
-            BoPhan = dept;
+            GioiTinh = gender;
             NgaySinh = birth;
             NgayVaoLam = start;
-            GioiTinh = gioiTinh;
-            Ghichu = gc;
+            BoPhan = dept;
+            GhiChu = note;
         }
 
         private string GenerateID(string dept)

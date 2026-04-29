@@ -44,11 +44,5 @@ namespace BSTProject
                 tree.Insert(new Employee("Võ Ngọc Hân", "Nữ", new DateTime(1999, 7, 7), new DateTime(2023, 5, 5), "SAL", "Telesales"));
 
         }
-
-        static void PrintList(List<Employee> list)
-        {
-            foreach (var e in list)
-                Console.WriteLine($"{e.MaNhanVien} \t| {e.TenNhanVien} \t| {e.GioiTinh} \t| {e.NgaySinh:dd/MM/yyyy} \t| {e.NgayVaoLam:dd/MM/yyyy} \t| {e.GhiChu}");
-        }
     }
 }

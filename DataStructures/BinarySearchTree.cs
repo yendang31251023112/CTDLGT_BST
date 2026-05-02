@@ -248,6 +248,7 @@ namespace BSTProject.DataStructures
         public bool Update(string maNV,
             string tenMoi = null,
             string boPhanMoi = null,
+            string ghiChuMoi = null,
             DateTime? ngaySinhMoi = null,
             DateTime? ngayVaoLamMoi = null)
         {
@@ -259,7 +260,10 @@ namespace BSTProject.DataStructures
 
             if (boPhanMoi != null)
             nvCanSua.Data.BoPhan = boPhanMoi;
-
+            
+            if (ghiChuMoi != null)
+                nvCanSua.Data.GhiChu = ghiChuMoi;
+            
             if (ngaySinhMoi != null)
                 nvCanSua.Data.NgaySinh = ngaySinhMoi.Value;
 

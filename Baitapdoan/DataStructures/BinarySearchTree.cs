@@ -243,11 +243,11 @@ namespace Baitapdoan.DataStructures
             GetAllAscending(node.Right, list);
         }
 
-
         //Cập nhật thông tin nhân viên theo mã nhân viên
         public bool Update(string maNV,
             string tenMoi = null,
             string boPhanMoi = null,
+            string ghiChuMoi = null,
             DateTime? ngaySinhMoi = null,
             DateTime? ngayVaoLamMoi = null)
         {
@@ -259,7 +259,10 @@ namespace Baitapdoan.DataStructures
 
             if (boPhanMoi != null)
             nvCanSua.Data.BoPhan = boPhanMoi;
-
+            
+            if (ghiChuMoi != null)
+                nvCanSua.Data.GhiChu = ghiChuMoi;
+            
             if (ngaySinhMoi != null)
                 nvCanSua.Data.NgaySinh = ngaySinhMoi.Value;
 

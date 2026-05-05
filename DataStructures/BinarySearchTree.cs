@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using BSTProject.Models;
-namespace Baitapdoan.DataStructures
+namespace BSTProject.DataStructures
 {
     public class BinarySearch
     {

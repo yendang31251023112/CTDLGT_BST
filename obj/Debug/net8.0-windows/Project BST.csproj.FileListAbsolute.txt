@@ -1,0 +1,38 @@
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.exe
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.dll.config
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.deps.json
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.runtimeconfig.json
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.dll
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.pdb
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.Properties.Resources.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.FormAdd.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.FormLogin.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.FormMain.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.frmLich.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.csproj.GenerateResource.cache
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.csproj.CoreCompileInputs.cache
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.dll
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\refint\Project BST.dll
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.pdb
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.genruntimeconfig.cache
+C:\Users\tuanh\Downloads\CTDLGT_BST-main\CTDLGT_BST-main\obj\Debug\net8.0-windows\ref\Project BST.dll
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.exe
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.dll.config
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.deps.json
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.runtimeconfig.json
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.dll
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\bin\Debug\net8.0-windows\Project BST.pdb
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.Properties.Resources.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.FormAdd.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.FormLogin.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.FormMain.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Baitapdoan.frmLich.resources
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.csproj.GenerateResource.cache
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.csproj.CoreCompileInputs.cache
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.dll
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\refint\Project BST.dll
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.pdb
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\Project BST.genruntimeconfig.cache
+C:\Users\tuanh\Downloads\CTDLGT_BST-main (1)\CTDLGT_BST-main\obj\Debug\net8.0-windows\ref\Project BST.dll
